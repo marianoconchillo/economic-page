@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="../styles/global.css" rel="stylesheet" />
+    <title>Historial</title>
+  </head>
+
+  <body>
+    <section class="history">
+      <a class="btn btn-historic" href="index.html">Home</a>
+      <h2>Cotización dólar Blue</h2>
+      <div class="loader" id="loader"></div>
+      <table class="animate__animated animate__fadeIn" id="tabla">
+        <thead>
+          <tr>
+            <th class="th-history">Fecha</th>
+            <th class="th-history">Valor</th>
+          </tr>
+        </thead>
+        <tbody class="table-content"></tbody>
+      </table>
+      <div class="historic-buttons">
+        <a class="btn btn-historic" id="before" onclick="prevPage()">Atrás</a>
+        <a class="btn btn-historic" id="after" onclick="nextPage()">Siguiente</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Design by: Mariano Conchillo & Santino Castagno</p>
+    </footer>
+  </body>
+
+  <script src="../scripts/valueService.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</html>

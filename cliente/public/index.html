@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="../styles/global.css" rel="stylesheet" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+      </style> 
+    <title>Economic Page</title>
+  </head>
+
+  <body>
+    
+    <header class="welcome">
+      <div class="title animate__animated animate__fadeIn">
+        <h1>Estadísticas del BCRA</h1>
+        <h3>Consultá la cotización del dólar</h3>
+        <a class="btn" href="record.html">HISTÓRICO</a>
+      </div>
+    </header>
+
+    <section class="today">
+      <h2 id="fecha">DATOS DE HOY: </h2>
+      <div class="loader" id="loader"></div>
+      <table>
+        <thead>
+          <tr>
+            <th>Compra</th>
+            <th>Venta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="compra">$ </th>
+            <th class="venta">$ </th>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="more-dollars">
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <h4>Dólar Blue</h4>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p class="compra">
+                COMPRA: $
+              </p>
+              <p class="venta">
+                VENTA: $
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <h4>Dólar MEP</h4>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                $200.35
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <h4>Contado con Liquidación</h4>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                $200.49
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <h4>Dólar "Solidario"</h4>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <p>
+                $190.89
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    
+    <footer>
+        <p>Design by: Mariano Conchillo & Santino Castagno</p>
+    </footer>
+
+  </body>
+
+  <script src="../scripts/todayService.js"></script>
+
+</html>
